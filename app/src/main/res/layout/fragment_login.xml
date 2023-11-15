@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.LoginFrag">
+
+    <LinearLayout
+        android:id="@+id/ed_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+
+        android:padding="15dp"
+        >
+        <EditText
+            android:id="@+id/ed_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="First Name"
+            android:padding="5dp"
+            android:background="@drawable/ed_background"
+            />
+        <EditText
+            android:id="@+id/ed_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Last Name"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:padding="5dp"
+            android:background="@drawable/ed_background"/>
+        <EditText
+            android:id="@+id/ed_age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Age"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/ed_background"/>
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/ed_background"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ed_container"
+        app:layout_constraintStart_toStartOf="@id/ed_container"
+        app:layout_constraintEnd_toEndOf="@id/ed_container"
+        android:padding="15dp"
+        android:weightSum="3"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_user"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:layout_weight="1"
+            android:text="Add User"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_remove_user"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:text="Remove User"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_update_user"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:layout_weight="1"
+            android:text="Update User"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
